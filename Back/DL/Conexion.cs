@@ -11,13 +11,13 @@ namespace DL
     {
         public static string ConnectionString()
         {
-            string CadenaConexion = "";
+            string CadenaConexion = "Data Source=LAPTOP-DO9MIAN5;Initial Catalog=AereoMexico;Integrated Security=True";
             return CadenaConexion;
         }
         public static SqlCommand CreateCommand(string Query, SqlConnection context)
         {
             context.Open();
-            SqlCommand cmd = new SqlCommand();
+            SqlCommand cmd = new SqlCommand(Query,context);
             return cmd;
         }
         public static int ExecuteCommand(SqlCommand cmd)
