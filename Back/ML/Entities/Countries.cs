@@ -8,7 +8,7 @@ namespace ML.Entities
 {
     public class Countries
     {
-        public int IdCountry { get; set; }
+        public string IdCountry { get; set; }
         public string Country { get; set; }
     }
 }

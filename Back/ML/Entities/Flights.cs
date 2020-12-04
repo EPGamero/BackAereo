@@ -12,7 +12,7 @@ namespace ML.Entities
         public DateTime RegistrationDate { get; set; }
         public Countries OCountry { get; set; }
         public Countries DCountry { get; set; }
-        public DateTime DepartureDate { get; set; }
+        public string DepartureDate { get; set; }
 
     }
 }
